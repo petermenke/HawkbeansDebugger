@@ -20,7 +20,7 @@ Step through the program using one of the different modes:
 Each instruction can have one or more event associated with it. Updating the value of a static field in a class or pushing a new stack frame are examples of events that are tracked. Once an instruction is executed, its events will be played through one at a time. There is a popup in the bottom right for every event and the DOM is updated to reflect the effect. If a field of a class is updated, the "Field" section will expand and the field will be bolded momentarily. Once the events have played out, the next instruction is ready for execution. 
 
 ### Programs
-Currently there are X programs available to run:
+Currently there are 5 programs available to run:
 * [EmptyDemo](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/EmptyDemo.java): A barebones class with only the main method. 
 * [FibonacciRec](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/FibonacciRec.java): Calculate the 5th fibonacci number (recursively).
 * [FibonacciIter](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/FibonacciIter.java): Calculate the 6thth fibonacci number (iteratively).
@@ -33,6 +33,16 @@ Currently there are X programs available to run:
 * The sample programs are all relatively small because the JSON becomes very large when more instructions are executed. 
 * Sometimes float values are not displayed properly.
 * The debugger does not know much about objects other than their reference. Therefore, as the object value it simply displays the reference.
+
+### Images
+Executing the "MathDemo" program (just started).
+![Imgur](https://i.imgur.com/hEt0lWN.png)
+
+Executing the "MathDemo" program (mid execution).
+![Imgur](https://i.imgur.com/Tm58T2P.png)
+
+Executing the "FibonacciRec" program.
+![Imgur](https://i.imgur.com/PZIEpXJ.png)
 
 ## Methodology
 ### Back-End
