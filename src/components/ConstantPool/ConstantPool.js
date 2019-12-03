@@ -63,6 +63,13 @@ class ConstantPool extends React.Component {
         return this.resolveUTF8(item["name_index"]) + " : " + this.resolveUTF8(item["descriptor_index"]);
     }
 
+    convertToFloat(i) {
+        const b = new ArrayBuffer(4);
+        const v = new DataView(b);
+        v.setInt32(0, i);
+        return v.getFloat32(0);
+    }
+
     render() {
         return <CollapseItem title="Constant Pool">
 
@@ -98,13 +105,20 @@ class ConstantPool extends React.Component {
 
                     }
 
-                    // NOT TESTED
-                    case CONSTANT_Integer :
-                    case CONSTANT_Float : {
+                    case CONSTANT_Integer :{
                         return <tr key={i}>
                                     <td>{c["idx"]}</td>
                                     <td>{TAGS[c["tag"]]}</td>
                                     <td>{c["bytes"]}</td>
+                                </tr>;
+
+                    }
+
+                    case CONSTANT_Float : {
+                        return <tr key={i}>
+                                    <td>{c["idx"]}</td>
+                                    <td>{TAGS[c["tag"]]}</td>
+                                    <td>{this.convertToFloat(c["bytes"])}</td>
                                 </tr>;
 
                     }

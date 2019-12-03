@@ -14,10 +14,10 @@ class CodeItem extends React.Component {
     }
 
     render() {
-        return <div id={this.props.classNameStr + "::" + this.props.methodNameStr + "::" + this.props.data["pc"]} ref={this.myRef}>
-            <div className={"instrName code" + (this.props.executingInstruction ? " bold" : "")}>{this.props.data["name"]}</div>
-            <div className="instrData" >{this.props.data["data"].map(d => d > 0XF ? d.toString(16) : "0" + d.toString(16)).join(" ")}</div>
-        </div>
+        return <tr id={this.props.classNameStr + "::" + this.props.methodNameStr + "::" + this.props.data["pc"]} ref={this.myRef}>
+            <td className={"instrName code" + (this.props.executingInstruction ? " bold" : "")}>{this.props.data["name"]}</td>
+            <td className="instrData" > {"  " + this.props.data["data"].map(d => d > 0XF ? d.toString(16) : "0" + d.toString(16)).join(" ")}</td>
+        </tr>
     }
 }
 

@@ -14,8 +14,11 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import {ToastsContainer, ToastsStore} from 'react-toasts';
 
 // Load the programs
-import basic from './data/executionInfo';
-import other from './data/executionInfo';
+import FibonacciRec from './data/FibonacciRec.json';
+import FibonacciIter from './data/FibonacciIter.json';
+import EmptyDemo from './data/EmptyDemo.json';
+import MathDemo from './data/MathDemo.json';
+import StringDemo from './data/StringDemo.json';
 
 class App extends React.Component {
 
@@ -35,8 +38,11 @@ class App extends React.Component {
     }
 
     this.programs = [
-      {name: "basic", content: basic},
-      {name: "other", content: other}
+      {name: "Empty Demo", content: EmptyDemo},
+      {name: "Fibonacci (Rec)", content: FibonacciRec},
+      {name: "Fibonacci (Iter)", content: FibonacciIter},
+      {name: "Math Demo", content: MathDemo},
+      {name: "String Demo", content: StringDemo}
     ]
 
     this.stackCounter = 1;
@@ -355,17 +361,18 @@ class App extends React.Component {
     this.setState({
       mode: "finishMethod",
       stopped: false
-    })
-
+    }, async _ => {
+      
     this.stackCounter = 1;
 
-    while(this.stackCounter > 0) {
+    while(this.stackCounter > 0 && this.state.mode === "finishMethod") {
       await this.doOneInstruction();
     }
 
     this.setState({
       mode: "single",
       stopped: false
+    })
     })
   }
 
@@ -380,6 +387,7 @@ class App extends React.Component {
     return <div className="App">
     
       <Row noGutters={true} style={{height: "5vh", paddingTop: "5px"}}>
+      <Col><h2 style={{float: "left", marginLeft: "5px"}} >Hawkbeans Debugger</h2></Col>
           <Col>
             <Dropdown as={ButtonGroup} style={{float: "right", marginRight: "5px"}}>
               {this.state.mode === "single" ? 
@@ -404,6 +412,9 @@ class App extends React.Component {
           </DropdownButton>
 
           </Col>
+
+          <Col><Button style={{float: "right", marginRight: "5px"}} href="https://github.com/petermenke/HawkbeansDebugger" variant="info">View Github Page</Button></Col>
+
     </Row>
     
     <Row noGutters={true}>
