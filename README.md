@@ -43,6 +43,8 @@ The bulk of the work for the back-end of this project was figuring out where to 
 * The local variables changes were tracked in `handle_istore`, `handle_istore_X`, and similar methods of `bc_interp.c`
 * The operand stack was managed with the `push_val` and `pop_val` methods of `bc_interp.c`, with adjustments made for specific data types. 
 
+(Due to a bug in Hawkbeans, when running the JVM, use a file in the current directory. EX: `bin/hawkbeans-clang-debug StringDemo.class`)
+
 ### Front-End
 The front-end of this application is built on React, which leverages one-way data binding to allow the transitions and animations to happen seamlessly. The most complicated pieces involve making sure the events at the correct time and are visible to the user. The class info section scrolls automatically to keep the executing instruction in view, while also giving the used the ability to pause and investigate other classes and methods. 
 
