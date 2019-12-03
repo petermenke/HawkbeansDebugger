@@ -21,11 +21,11 @@ Each instruction can have one or more event associated with it. Updating the val
 
 ### Programs
 Currently there are X programs available to run:
-* Empty: aaaa
-* FibonacciRec: Calculate the 5th fibonacci number (recursively).
-* FibonacciIter: Calculate the 6thth fibonacci number (iteratively).
-* StaticFieldDemo: asdasd
-* MathDemo: math!
+* [EmptyDemo](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/EmptyDemo.java): A barebones class with only the main method. 
+* [FibonacciRec](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/FibonacciRec.java): Calculate the 5th fibonacci number (recursively).
+* [FibonacciIter](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/FibonacciIter.java): Calculate the 6thth fibonacci number (iteratively).
+* [StringDemo](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/StringDemo.java): Demonstrates the use of methods of the String class. (SLOW)
+* [MathDemo](https://github.com/petermenke/HawkbeansDebugger/blob/master/src/data/MathDemo.java): Shows the stack-based nature of bytecode with a few simple math operations. 
 
 ### Limitations
 * Since Hawkbeans is not entirely set up to handle Double or Long values, those are not officially supported. 
