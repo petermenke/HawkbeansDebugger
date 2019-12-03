@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/HawkbeansDebugger/precache-manifest.837add7d6d161582a6c0bb01dde0d9fc.js"
+  "/HawkbeansDebugger/precache-manifest.4838e9c76f7930f602b51d003f1f53b5.js"
 );
 
 self.addEventListener('message', (event) => {
