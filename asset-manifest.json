@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/HawkbeansDebugger/static/css/main.549c121f.chunk.css",
+    "main.js": "/HawkbeansDebugger/static/js/main.9c3eddba.chunk.js",
+    "main.js.map": "/HawkbeansDebugger/static/js/main.9c3eddba.chunk.js.map",
+    "runtime-main.js": "/HawkbeansDebugger/static/js/runtime-main.e7ea5a2e.js",
+    "runtime-main.js.map": "/HawkbeansDebugger/static/js/runtime-main.e7ea5a2e.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/HawkbeansDebugger/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.166516d6.chunk.js": "/HawkbeansDebugger/static/js/2.166516d6.chunk.js",
+    "static/js/2.166516d6.chunk.js.map": "/HawkbeansDebugger/static/js/2.166516d6.chunk.js.map",
+    "index.html": "/HawkbeansDebugger/index.html",
+    "precache-manifest.837add7d6d161582a6c0bb01dde0d9fc.js": "/HawkbeansDebugger/precache-manifest.837add7d6d161582a6c0bb01dde0d9fc.js",
+    "service-worker.js": "/HawkbeansDebugger/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/HawkbeansDebugger/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.549c121f.chunk.css.map": "/HawkbeansDebugger/static/css/main.549c121f.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7ea5a2e.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.166516d6.chunk.js",
+    "static/css/main.549c121f.chunk.css",
+    "static/js/main.9c3eddba.chunk.js"
+  ]
+}
